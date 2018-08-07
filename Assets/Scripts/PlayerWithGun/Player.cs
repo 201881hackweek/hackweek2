@@ -303,7 +303,7 @@ public class Player : MonoBehaviour {
         if (val > 0)
             transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
 
-        if (Input.GetKey(KeyCode.Z) && canRun/*&& isLanding*/)
+        if (Input.GetKey(KeyCode.LeftShift) && canRun/*&& isLanding*/)
         {
             if (san <= 3)
                 moveSpeed = runSpeed * 4 / 5;
